@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenu</class>
+ <widget class="QMainWindow" name="MainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>890</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>890</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>890</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Raleway</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Menú principal</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/book-flat.ico</normaloff>:/book-flat.ico</iconset>
+  </property>
+  <property name="accessibleDescription">
+   <string>Presione para salir</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="gbButtons">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>330</y>
+      <width>871</width>
+      <height>74</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 244, 242);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item alignment="Qt::AlignRight">
+      <widget class="QPushButton" name="pbExit">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Presione para salir&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>Presione para salir</string>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#pbExit {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbExit:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/door_out.ico</normaloff>:/door_out.ico</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTabWidget" name="tbMain">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>871</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="accessibleDescription">
+     <string>Presione para salir</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 244, 242);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Bienvenida</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="lbTitle">
+        <property name="font">
+         <font>
+          <family>Raleway</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(35, 54, 86);</string>
+        </property>
+        <property name="text">
+         <string>BIENVENIDO AL SISTEMA DE GESTIÓN DE LIBRERIAS </string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="lbContent">
+        <property name="font">
+         <font>
+          <family>Raleway</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(35, 54, 86);</string>
+        </property>
+        <property name="text">
+         <string>Dentro del sistema podrás administrar los usuarios, y los libros que estén dentro
+de la librería, así como de hacer un control estricto sobre los prestamos que se hagan
+día con día.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="lbContent2">
+        <property name="font">
+         <font>
+          <family>Raleway</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(35, 54, 86);</string>
+        </property>
+        <property name="text">
+         <string>Si necesitas ayuda puedes contactarnos a nuestro correo o número telefonico
+que puedes encontrarlo en la sección de ayuda.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="lbContent3">
+        <property name="font">
+         <font>
+          <family>Raleway</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(35, 54, 86);</string>
+        </property>
+        <property name="text">
+         <string>Esperamos que tengas una experencia satisfactoria.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" alignment="Qt::AlignRight">
+       <widget class="QLabel" name="lbFirm">
+        <property name="font">
+         <font>
+          <family>Raleway</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(35, 54, 86);</string>
+        </property>
+        <property name="text">
+         <string>Atentamente:
+Diego Ramírez</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tabUser">
+     <attribute name="title">
+      <string>Administración de usuarios</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="gbStudent">
+        <property name="font">
+         <font>
+          <family>Raleway</family>
+          <pointsize>9</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Administración de estudiantes</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pbStudent">
+           <property name="font">
+            <font>
+             <family>Raleway</family>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#pbStudent {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbStudent:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>    Administrar alumnos</string>
+           </property>
+           <property name="icon">
+            <iconset resource="images.qrc">
+             <normaloff>:/user_student.ico</normaloff>:/user_student.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <property name="autoRepeat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pbCareer">
+           <property name="font">
+            <font>
+             <family>Raleway</family>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#pbCareer {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbCareer:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>   Administrar carreras</string>
+           </property>
+           <property name="icon">
+            <iconset resource="images.qrc">
+             <normaloff>:/icono_index-05-1.ico</normaloff>:/icono_index-05-1.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="gbTeacher">
+        <property name="font">
+         <font>
+          <family>Raleway</family>
+          <pointsize>9</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Administración de estudiantes</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pbTeacher">
+           <property name="font">
+            <font>
+             <family>Raleway</family>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#pbTeacher {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbTeacher:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>   Administrar maestros</string>
+           </property>
+           <property name="icon">
+            <iconset resource="images.qrc">
+             <normaloff>:/Teacher-Icon.ico</normaloff>:/Teacher-Icon.ico</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>70</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tabBook">
+     <attribute name="title">
+      <string>Administración de libros</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>851</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Administración de libros</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" rowspan="2">
+        <widget class="QPushButton" name="pbPublisher">
+         <property name="font">
+          <font>
+           <family>Raleway</family>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pbPublisher {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbPublisher:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+         </property>
+         <property name="text">
+          <string>  Administrar editoriales</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/publisher_bookmark.ico</normaloff>:/publisher_bookmark.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pbBook">
+         <property name="font">
+          <font>
+           <family>Raleway</family>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pbBook {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbBook:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+         </property>
+         <property name="text">
+          <string>   Agregar libro</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/book_add.ico</normaloff>:/book_add.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" rowspan="2">
+        <widget class="QPushButton" name="pbAuthor">
+         <property name="font">
+          <font>
+           <family>Raleway</family>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pbAuthor {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbAuthor:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+         </property>
+         <property name="text">
+          <string>  Administrar autores</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/pencil.ico</normaloff>:/pencil.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" rowspan="2">
+        <widget class="QPushButton" name="pbSearchBook">
+         <property name="font">
+          <font>
+           <family>Raleway</family>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pbSearchBook {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbSearchBook:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+         </property>
+         <property name="text">
+          <string>   Buscar libros</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/book.ico</normaloff>:/book.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="pbModifyBook">
+         <property name="font">
+          <font>
+           <family>Raleway</family>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pbModifyBook {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbModifyBook:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+         </property>
+         <property name="text">
+          <string>   Modificar libro</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/book_edit.ico</normaloff>:/book_edit.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>60</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="autoRepeat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabPrestamos">
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <attribute name="title">
+      <string>Administración de préstamos</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="font">
+         <font>
+          <family>Raleway</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Opciones de prestamos</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0" rowspan="2">
+          <widget class="QPushButton" name="pbPrestamos">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Raleway</family>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#pbPrestamos {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbPrestamos:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>Añadir un préstamo</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pbPrestamos_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Raleway</family>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#pbPrestamos_2 {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbPrestamos_2:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>Reporte de préstamos</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pbPrestamos_3">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Raleway</family>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#pbPrestamos_3 {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbPrestamos_3:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+           </property>
+           <property name="text">
+            <string>Devolver préstamos</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-36</x>
+      <y>-35</y>
+      <width>931</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(65, 91, 118);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>gbButtons</zorder>
+   <zorder>tbMain</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbExit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainMenu</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>700</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>420</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

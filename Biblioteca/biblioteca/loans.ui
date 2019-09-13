@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Loans</class>
+ <widget class="QMainWindow" name="Loans">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1060</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1060</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1060</width>
+    <height>520</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Administración de prestamos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/book-flat.ico</normaloff>:/book-flat.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="gbMain">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1041</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 244, 242);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QGroupBox" name="gbStudent">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>451</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Información del alumno</string>
+     </property>
+     <widget class="QLabel" name="lbCode">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Código</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbName">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>30</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nombre</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbFatherLast">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apellido paterno</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbMotherLast">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apellido materno</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbCity">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ciudad</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbCellphone">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Telefono</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbCareer">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Carrera</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneCode">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>28</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255);</string>
+      </property>
+      <property name="maxLength">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneName">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>28</y>
+        <width>201</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneFatherLast">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>58</y>
+        <width>321</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneMotherLast">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>88</y>
+        <width>321</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneCity">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>118</y>
+        <width>371</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneCellphone">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>148</y>
+        <width>371</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneCareer">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>178</y>
+        <width>371</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255,255,255);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="gbBook">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>20</y>
+       <width>561</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>Información del libro</string>
+     </property>
+     <widget class="QLabel" name="lbBook">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Libro</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cboBook">
+      <property name="geometry">
+       <rect>
+        <x>44</x>
+        <y>27</y>
+        <width>251</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lneBook">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>27</y>
+        <width>251</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="maxLength">
+       <number>100</number>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cboExistence">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>57</y>
+        <width>225</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbExistence">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ejemplar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbPushExistence">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>211</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pbPushExistence {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbPushExistence:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+      </property>
+      <property name="text">
+       <string>Agregar ese ejemplar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pbPopExistence">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
+        <width>211</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Raleway</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pbPopExistence {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbPopExistence:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+      </property>
+      <property name="text">
+       <string>Eliminar seleccionado</string>
+      </property>
+     </widget>
+     <zorder>lbBook</zorder>
+     <zorder>cboBook</zorder>
+     <zorder>lneBook</zorder>
+     <zorder>lbExistence</zorder>
+     <zorder>cboExistence</zorder>
+     <zorder>pbPushExistence</zorder>
+     <zorder>pbPopExistence</zorder>
+    </widget>
+    <widget class="QTableWidget" name="twBook">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>671</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbInsertLoan">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>260</y>
+       <width>271</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pbInsertLoan {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbInsertLoan:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+     </property>
+     <property name="text">
+      <string>Guardar el prestamo</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbCancelLoan">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>360</y>
+       <width>271</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pbCancelLoan {
+background-color: rgb(123, 155, 166);
+border-radius: 5px;
+ }
+
+ QPushButton#pbCancelLoan:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+     </property>
+     <property name="text">
+      <string>Cancelar el prestamo</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-6</x>
+      <y>-5</y>
+      <width>1071</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(65, 91, 118);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>gbMain</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

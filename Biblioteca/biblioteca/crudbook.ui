@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CrudBook</class>
+ <widget class="QMainWindow" name="CrudBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>999</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>999</width>
+    <height>484</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>999</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Administración de libros</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/book-flat.ico</normaloff>:/book-flat.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="gbMain">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>671</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 244, 242); color: rgb(35, 54, 86);</string>
+    </property>
+    <property name="title">
+     <string>Libros</string>
+    </property>
+    <widget class="QLabel" name="lbISBN">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>ISBN</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbTitle">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>30</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Título</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPageNumber">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>30</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Número de páginas</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lneISBN">
+     <property name="geometry">
+      <rect>
+       <x>43</x>
+       <y>28</y>
+       <width>161</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="maxLength">
+      <number>30</number>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lneTitle">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>28</y>
+       <width>211</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="maxLength">
+      <number>110</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="sbPageNumber">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>28</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::PlusMinus</enum>
+     </property>
+     <property name="maximum">
+      <number>10000</number>
+     </property>
+     <property name="singleStep">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbGenero">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>94</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Genero</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lneGenero">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>92</y>
+       <width>311</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="maxLength">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cboGenero">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>91</y>
+       <width>261</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cboPublisher">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>119</y>
+       <width>261</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lnePublisher">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>120</y>
+       <width>311</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="maxLength">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPublisher">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>122</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Editorial</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cboFormate">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>149</y>
+       <width>261</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbFormate">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>152</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Formato</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lneFormate">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>150</y>
+       <width>311</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="maxLength">
+      <number>100</number>
+     </property>
+    </widget>
+    <widget class="QListView" name="lvWriter">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>241</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QListView" name="lvWriterSelect">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>180</y>
+       <width>221</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="sbCopiesNumber">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>427</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::PlusMinus</enum>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbCopiesNumber">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>430</y>
+       <width>147</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Número de ejemplares</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbPush">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>240</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pbPush {
+background-color: rgb(123, 155, 166);
+color:  rgb(255, 255, 255);
+border-radius: 5px;
+ }
+
+ QPushButton#pbPush:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbPop">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>280</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pbPop {
+background-color: rgb(123, 155, 166);
+color:  rgb(255, 255, 255);
+border-radius: 5px;
+ }
+
+ QPushButton#pbPop:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+     </property>
+     <property name="text">
+      <string>x</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="sbEdition">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>58</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::PlusMinus</enum>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>15</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbPageNumber_2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>60</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Edición</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lneWriter">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>241</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="maxLength">
+      <number>100</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gbActions">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>10</y>
+      <width>291</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Raleway</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 244, 242); color: rgb(35, 54, 86);</string>
+    </property>
+    <property name="title">
+     <string>Acciones</string>
+    </property>
+    <widget class="QPushButton" name="pbActive">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pbActive {
+background-color: rgb(123, 155, 166);
+color:  rgb(255, 255, 255);
+border-radius: 5px;
+ }
+
+ QPushButton#pbActive:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+     </property>
+     <property name="text">
+      <string>Activar registro</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbInsert">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pbInsert {
+background-color: rgb(123, 155, 166);
+color:  rgb(255, 255, 255);
+border-radius: 5px;
+ }
+
+ QPushButton#pbInsert:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+     </property>
+     <property name="text">
+      <string>Registrar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbExit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>370</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Raleway</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#pbExit {
+background-color: rgb(123, 155, 166);
+color:  rgb(255, 255, 255);
+border-radius: 5px;
+ }
+
+ QPushButton#pbExit:hover {
+background-color: rgb(65, 91, 118);
+color:  rgb(255, 255, 255);
+ }</string>
+     </property>
+     <property name="text">
+      <string>   Salir</string>
+     </property>
+     <property name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/door_out.ico</normaloff>:/door_out.ico</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-16</x>
+      <y>-5</y>
+      <width>1051</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(65, 91, 118);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>gbMain</zorder>
+   <zorder>gbActions</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbExit</sender>
+   <signal>clicked()</signal>
+   <receiver>CrudBook</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>524</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbExit</sender>
+   <signal>clicked()</signal>
+   <receiver>CrudBook</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>836</x>
+     <y>407</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>689</x>
+     <y>443</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

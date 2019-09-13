@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>book.ico</file>
+        <file>Libro-abierto-578889.jpg</file>
+        <file>door_out.ico</file>
+        <file>user_student.ico</file>
+        <file>icono_index-05-1.ico</file>
+        <file>Teacher-Icon.ico</file>
+        <file>descarga.ico</file>
+        <file>help.ico</file>
+        <file>user_add.ico</file>
+        <file>book-flat.ico</file>
+        <file>update_contact_info.ico</file>
+        <file>pencil.ico</file>
+        <file>book_add.ico</file>
+        <file>book_delete.ico</file>
+        <file>book_edit.ico</file>
+        <file>publisher_bookmark.ico</file>
+        <file>emails_stack.ico</file>
+    </qresource>
+</RCC>

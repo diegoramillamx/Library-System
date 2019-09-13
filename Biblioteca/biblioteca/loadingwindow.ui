@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoadingWindow</class>
+ <widget class="QMainWindow" name="LoadingWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>746</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Raleway</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema para la admistración de la biblioteca escolar</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/book-flat.ico</normaloff>:/book-flat.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(65, 91, 118);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(238, 244, 242);
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">border-radius: 5px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="images.qrc">:/Libro-abierto-578889.jpg</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QProgressBar" name="pbLoading">
+         <property name="font">
+          <font>
+           <family>Raleway</family>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>Raleway</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(35, 54, 86);</string>
+         </property>
+         <property name="text">
+          <string>SISTEMA DE ADMINISTRACIÓN DE LIBRERIAS ESCOLARES v1.4</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
